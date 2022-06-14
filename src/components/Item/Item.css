@@ -1,0 +1,63 @@
+.wrapperImg {
+  transition: 1s;
+  transition-timing-function: cubic-bezier(1, -0.99, 0.25, 1);
+  position: relative;
+  width: 20%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: 'Amatic SC', cursive;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+}
+
+.textCenter {
+  transition: 0.5s;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 2em;
+}
+
+
+.active {
+  width: 50%;
+}
+
+.up {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1s;
+  font-size: 2em;
+  color: white;
+}
+
+.down {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 1s;
+  font-size: 2em;
+  color: white;
+}
+
+.activeUp {
+  opacity: 1;
+  top: 20%;
+  transition: 1s;
+}
+
+.activeDown {
+  opacity: 1;
+  bottom: 20%;
+  transition: 1s;
+}
